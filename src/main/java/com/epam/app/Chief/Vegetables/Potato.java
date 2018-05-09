@@ -1,0 +1,23 @@
+package com.epam.app.Chief.Vegetables;
+
+import com.epam.app.Chief.Enums.Colour;
+import com.epam.app.Chief.Enums.Shape;
+import com.epam.app.Chief.Enums.Taste;
+
+/**
+ * Author: Daria Budchan, May, 2018
+ */
+
+public class Potato extends Vegetable {
+
+    public Potato(Double weight){
+        super(weight);
+        this.colour = Colour.BROWN;
+        this.shape = Shape.ELLIPSE;
+        this.taste = Taste.INSIPID;
+    }
+
+    public int compareTo(Object o) {
+        return super.compareTo((Vegetable) o);
+    }
+}
